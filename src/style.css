@@ -1,6 +1,6 @@
 body {
   margin: 40px 150px;
-  padding: 50px;
+  padding: 25px;
   font-family: "Shadows Into Light Two", cursive;
 }
 
@@ -8,4 +8,10 @@ ul {
   list-style-type: none;
   padding-left: 0;
   font-size: 18px;
+}
+
+.units {
+  position: relative;
+  top: -18px;
+  font-size: 12px;
 }
