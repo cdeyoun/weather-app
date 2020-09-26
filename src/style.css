@@ -1,6 +1,11 @@
 body {
-  margin: 50px;
+  margin: 40px 60px;
   padding: 25px;
   border: 1px solid;
   border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
