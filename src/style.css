@@ -12,6 +12,12 @@ ul {
 
 .units {
   position: relative;
-  top: -18px;
+  top: -16px;
   font-size: 12px;
+}
+
+.forcast-units {
+  position: relative;
+  top: -6px;
+  font-size: 10px;
 }
