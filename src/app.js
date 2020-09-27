@@ -36,14 +36,14 @@ function searchCity(city) {
 function displayWeatherCondition(response) {
   let weatherIcon = document.querySelector("#temp-icon");
 
+  celsiusTemp = response.data.main.temp;
+
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#country").innerHTML = response.data.sys.country;
-  document.querySelector("#temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temp").innerHTML = Math.round(celsiusTemp);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
-    response.data.wind.speed
+    response.data.wind.speed * 3.6
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
@@ -51,7 +51,6 @@ function displayWeatherCondition(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
   );
-  celsiusTemp = response.data.main.temp;
 }
 
 function displayFahrenheitTemp(event) {
