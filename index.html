@@ -9,19 +9,22 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Shadows+Into+Light+Two&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
     <div class="container shadow-lg p-3 mb-5 bg-white rounded">
       <div class="row">
         <div class="col-6">
-          <div class="city">New York, New York</div>
+          <div class="city">
+            <span id="city">New York</span>,
+            <span id="country">US</span>
+          </div>
         </div>
         <div class="col-4">
           <input
@@ -43,11 +46,20 @@
       </div>
       <div class="row p-3">
         <div class="col">
-          <div id="temp">☀️ 80<span id="units">°C | °F</span></div>
-          <div class="details">Saturday, 17:00</div>
-          <div class="details">Clear Sky</div>
-          <div class="details">Humidity: 20%</div>
-          <div class="details">Wind: 3 km/h</div>
+          <div class="main-temp">
+            <span id="temp-icon">☀️ </span><span id="temp">80</span
+            ><span id="units">°C | °F</span>
+          </div>
+          <div class="details" id="date"></div>
+          <div class="details" id="description">Clear Sky</div>
+          <div class="details">
+            <span>Humidity: </span>
+            <span id="humidity">20</span>%
+          </div>
+          <div class="details">
+            <span>Wind: </span>
+            <span id="wind">3</span> km/h
+          </div>
         </div>
         <div class="col">
           <div id="forecast-header">Hourly Forecast</div>

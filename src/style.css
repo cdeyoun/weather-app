@@ -30,13 +30,13 @@ ul {
   font-size: 10px;
 }
 
-#temp {
+.main-temp {
   font-size: 40px;
 }
 
 #units {
   position: relative;
-  top: -22px;
+  top: -16px;
   font-size: 22px;
 }
 
