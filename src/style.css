@@ -1,23 +1,46 @@
+html {
+  height: 100%;
+}
 body {
   margin: 40px 150px;
   padding: 25px;
   font-family: "Shadows Into Light Two", cursive;
+  background: linear-gradient(#d9afd9, #97d9e1);
 }
 
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+.city {
+  font-size: 30px;
+}
+
+.details {
   font-size: 18px;
 }
 
-.units {
-  position: relative;
-  top: -16px;
-  font-size: 12px;
+.forecast-details {
+  font-size: 22px;
 }
 
-.forcast-units {
+.forecast-units {
   position: relative;
-  top: -6px;
+  top: -10px;
   font-size: 10px;
+}
+
+#temp {
+  font-size: 40px;
+}
+
+#units {
+  position: relative;
+  top: -22px;
+  font-size: 22px;
+}
+
+#forecast-header {
+  font-size: 26px;
+  padding-bottom: 5px;
 }
