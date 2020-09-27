@@ -50,16 +50,12 @@ input {
 #units {
   position: relative;
   top: -30px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #forecast-header {
   font-size: 26px;
   padding-bottom: 5px;
-}
-
-#temp-icon {
-  border-image-width: ;
 }
 
 #search-form {
