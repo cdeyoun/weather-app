@@ -21,6 +21,11 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function search(event) {
+  let city = document.querySelector("#city-input").value;
+  searchCity(city);
+}
+
 function searchCity(city) {
   let apiKey = `c6e524e805540ffde6b508e52263f991`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -28,6 +33,8 @@ function searchCity(city) {
 }
 
 function displayWeatherCondition(response) {
+  let weatherIcon = document.querySelector("#temp-icon");
+
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#country").innerHTML = response.data.sys.country;
   document.querySelector("#temp").innerHTML = Math.round(
@@ -39,11 +46,18 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`
+  );
 }
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 
 dateElement.innerHTML = formatDate(currentTime);
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", search);
 
 searchCity("Toledo");

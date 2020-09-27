@@ -19,39 +19,44 @@
   </head>
   <body>
     <div class="container shadow-lg p-3 mb-5 bg-white rounded">
-      <div class="row">
-        <div class="col-6">
-          <div class="city">
-            <span id="city">New York</span>,
-            <span id="country">US</span>
+      <form action="#" id="search-form">
+        <div class="row">
+          <div class="col-6 city">
+            <span id="city"></span>,
+            <span id="country"></span>
+          </div>
+          <div class="col-5 input-group mb-3">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search for new city..."
+            />
+            <div class="col-1 input-group-append">
+              <input
+                type="submit"
+                value="Search"
+                class="btn btn-outline-secondary"
+                id="button-addon2"
+              />
+            </div>
           </div>
         </div>
-        <div class="col-4">
-          <input
-            type="search"
-            placeholder="Search for new city..."
-            acutocomplete="off"
-            class="form-control shadow-sn"
-            id="#city-input"
-          />
-        </div>
-        <div class="col-2">
-          <input
-            type="submit"
-            value="Search"
-            class="form-control btn btn-primary shadow-sn"
-            id="submit-city"
-          />
-        </div>
-      </div>
+      </form>
       <div class="row p-3">
         <div class="col">
           <div class="main-temp">
-            <span id="temp-icon">☀️ </span><span id="temp">80</span
-            ><span id="units">°C | °F</span>
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="Weather Icon"
+              id="temp-icon"
+            />
+            <span id="temp"></span><span id="units">°C | °F</span>
           </div>
-          <div class="details" id="date"></div>
-          <div class="details" id="description">Clear Sky</div>
+          <div class="details">
+            <span id="date"></span>
+            <span id="time"></span>
+          </div>
+          <div class="details" id="description"></div>
           <div class="details">
             <span>Humidity: </span>
             <span id="humidity">20</span>%
