@@ -20,23 +20,27 @@
   <body>
     <div class="container shadow-lg p-3 mb-5 bg-white rounded">
       <form action="#" id="search-form">
-        <div class="row">
-          <div class="col-6 pt-1 city">
-            <span id="city">New York</span>,
-            <span id="country">US</span>
+        <div class="row mdl-3">
+          <div class="col-6 city">
+            <span id="city"></span>,
+            <span id="country"></span>
+            <div class="date-time">
+              <span id="date"></span>
+              <span id="time"></span>
+            </div>
           </div>
           <div class="col-5 input-group mb-3">
             <input
               type="search"
               class="form-control"
               autocomplete="off"
-              placeholder="Search for new city..."
+              placeholder="Search new city"
               id="city-input"
             />
-            <div class="col-1 input-group-append">
+            <div class="input-group-append mb-3">
               <input
                 type="submit"
-                value="Search"
+                value="Submit"
                 class="btn btn-outline-secondary"
                 id="button-addon2"
               />
@@ -54,18 +58,14 @@
             />
             <span id="temp"></span><span id="units">°C | °F</span>
           </div>
-          <div class="details">
-            <span id="date"></span>
-            <span id="time"></span>
-          </div>
           <div class="details" id="description"></div>
           <div class="details">
             <span>Humidity: </span>
-            <span id="humidity">20</span>%
+            <span id="humidity"></span>%
           </div>
           <div class="details">
             <span>Wind: </span>
-            <span id="wind">3</span> km/h
+            <span id="wind"></span> km/h
           </div>
         </div>
         <div class="col">

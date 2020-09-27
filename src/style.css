@@ -2,7 +2,7 @@ html {
   height: 100%;
 }
 body {
-  margin: 35px 150px;
+  margin: 5% 20%;
   padding: auto;
   font-family: "Shadows Into Light Two", cursive;
   background: linear-gradient(#d9afd9, #97d9e1);
@@ -18,11 +18,22 @@ input {
 }
 
 .city {
+  padding-left: 35px;
   font-size: 30px;
   font-weight: bold;
 }
 
+.date-time {
+  font-size: 16px;
+}
+
+.main-temp {
+  margin: 7px;
+  padding-left: 30px;
+  font-size: 55px;
+}
 .details {
+  padding-left: 30px;
   font-size: 18px;
 }
 
@@ -36,17 +47,21 @@ input {
   font-size: 10px;
 }
 
-.main-temp {
-  font-size: 40px;
-}
-
 #units {
   position: relative;
-  top: -16px;
+  top: -30px;
   font-size: 18px;
 }
 
 #forecast-header {
   font-size: 26px;
   padding-bottom: 5px;
+}
+
+#temp-icon {
+  border-image-width: ;
+}
+
+#search-form {
+  margin-top: 10px;
 }
