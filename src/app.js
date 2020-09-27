@@ -22,6 +22,7 @@ function formatDate(date) {
 }
 
 function search(event) {
+  event.preventDefault();
   let city = document.querySelector("#city-input").value;
   searchCity(city);
 }
@@ -60,4 +61,4 @@ dateElement.innerHTML = formatDate(currentTime);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", search);
 
-searchCity("Toledo");
+searchCity("London");

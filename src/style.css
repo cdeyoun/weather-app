@@ -2,8 +2,8 @@ html {
   height: 100%;
 }
 body {
-  margin: 40px 150px;
-  padding: 25px;
+  margin: 35px 150px;
+  padding: auto;
   font-family: "Shadows Into Light Two", cursive;
   background: linear-gradient(#d9afd9, #97d9e1);
 }
@@ -43,7 +43,7 @@ input {
 #units {
   position: relative;
   top: -16px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #forecast-header {
